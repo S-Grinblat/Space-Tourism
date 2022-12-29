@@ -1,0 +1,515 @@
+:root {
+  --text-white: #fff;
+  --button-grey: #666;
+  --font : 'Cinzel', serif;;
+  --active-button: rgba(255, 255, 255, 0.6);
+  --shadow: rgba(0, 0, 0, 0.3)
+}
+
+/* aca empieza home-mobil */
+
+.window {
+  display: none;
+}
+.init-home-desktop {
+  display: none;
+}
+.links__container-mobil {
+  display: none;
+}
+.crew-details-desktop {
+  display: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(images/background-home-mobile.jpg);
+  background-size: cover;
+}
+.header-mobil {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+}
+.images-container-mobil {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+.images-container-mobil img {
+  width: 35px;
+  height: 35px;
+}
+.home-container-mobil {
+  text-align: center;
+}
+.sub__title-mobil {
+  color: var(--text-white);
+  font-family: var(--font);
+  margin-top: 10px;
+  font-size: 1.4rem;
+  padding-top: 60px;
+}
+.title__home-mobil {
+  color: var(--text-white);
+  font-family: var(--font);
+  margin-top: 20px;
+  font-size: 4.0rem;
+}
+.p__home-mobil {
+  color: var(--text-white);
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+.container-button-mobil {
+  margin-top: 40px;
+}
+.button-mobil {
+  width: 120px;
+  height: 120px;
+  background-color: var(--text-white);
+  color: var(--button-grey);
+  border-radius: 50%;
+  border: none;
+  font-size: 1.4rem;
+}
+.button-mobil:active {
+  background-color: var(--active-button)
+}
+
+.links__container-mobil {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.links__container-mobil ul {
+  text-align: center;
+  background-color: var(--shadow);
+}
+.button__link-mobil {
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
+.button__link-mobil .link {
+  text-decoration: none;
+  color: var(--text-white);
+  font-family: var(--font);
+  font-size: 1.6rem;
+}
+.link:active {
+  border-bottom: 1px solid var(--text-white);
+}
+
+/* aca termina home-mobil */
+
+/* aca empieza destination-mobil */
+
+.destination {
+  background-image: url(images/background-destination-mobile.jpg);
+  background-size: cover;
+}
+.links__container {
+  display: none;
+}
+.destination__moon-details {
+  width: 100%;
+  height: 500px;
+  padding-top: 70px;
+  text-align: center;
+}
+.destination-details {
+  color: var(--text-white);
+  font-family: var(--font);
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+}
+.image-container img {
+  width: 150px;
+  height: 150px;
+  padding-bottom: 10px;
+}
+.image-container img:hover {
+  --webkit-animation: moon 4s linear infinite;
+  animation: moon 4s linear infinite; 
+}
+@keyframes moon {
+  100%{-webkit-transform: rotate(360deg);}
+}
+.moons__list-container {
+  display: flex;
+  justify-content: center;
+}
+.link {
+  text-decoration: none;
+  color: var(--text-white);
+  margin-left: 10px;
+  font-size: 1.0rem;
+  padding-bottom: 30px;
+  font-family: var(--font);
+}
+.title-moon {
+  color: var(--text-white);
+  font-size: 2.6rem;
+  font-family: var(--font);
+  letter-spacing: 5px;
+}
+.article-moon {
+  color: var(--text-white);
+  text-align: center;
+  padding: 25px 5px;
+  border-bottom: 1px solid var(--button-grey);
+}
+.moon-distance {
+  padding: 10px 0;
+  color: var(--text-white);
+  font-family: var(--font);
+}
+.distance {
+  color: var(--text-white);
+  font-size: 1.6rem;
+  font-family: var(--font);
+  padding-bottom: 10px;
+}
+.moon-travel {
+  color: var(--text-white);
+  padding: 10px 0;
+  font-family: var(--font);
+}
+.years {
+  color: var(--text-white);
+  font-size: 1.6rem;
+  font-family: var(--font);
+  padding-bottom: 10px;
+}
+/* aca termina destination-mobil */
+
+/* aca empieza crew mobil */
+
+.crew {
+  background-image: url(images/background-crew-mobile.jpg);
+  background-size: cover;
+}
+.crew-title {
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 10px;
+  color: var(--text-white);
+  font-family: var(--font);
+  letter-spacing: 5px;
+}
+.image__container-crew {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.crew-image {
+  width: 150px;
+  height: 170px;
+}
+.crew-dates {
+  text-align: center;
+}
+.crew__list-container {
+  padding-top: 65px ;
+}
+.subtitle-crew {
+  color: var(--text-white);
+  font-family: var(--font);
+  font-size: 0.8rem;
+  padding-top: 15px;
+}
+.title-crew {
+  color: var(--text-white);
+  font-family: var(--font);
+  font-size: 1.8rem;
+  padding-bottom: 15px;
+}
+.article-crew {
+  color: var(--text-white);
+}
+/* aca termina crew mobil */
+
+/* aca empieza technology mobil  */
+
+  .technology {
+    background-image: url(images/background-technology-mobile.jpg);
+    background-size: cover;
+  }
+  .technology-details-desktop {
+    display: none;
+  }
+  .technology-dates {
+    text-align: center;
+  }
+  .technology-title {
+    color: var(--text-white);
+    font-family: var(--font);
+    padding-top: 55px;
+  }
+  .technology-image {
+    margin-top: 25px;
+    width: 100%;
+    height: auto;
+  }
+  .links__container-technology-mobil{
+    width: 100%;
+    height: 30px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--shadow);
+  }
+  .link-technology-mobil {
+    text-decoration: none;
+    border-radius: 50%;
+    color: var(--text-white);
+    background-color: var(--button-grey);
+    text-align: center;
+    padding: 0 10px;
+    font-size: 1.4rem;
+  }
+  .subtitle-technology {
+    color: var(--text-white);
+    margin-top: 25px;
+  }
+  .title-technology {
+    color: var(--text-white);
+    font-family: var(--font);
+    letter-spacing: 5px;
+    font-size: 1.6rem;
+    margin-top: 25px;
+  }
+  .article-technology {
+    color: var(--text-white);
+    margin-top: 25px;
+    padding-bottom: 10px;
+  }
+
+/* aca termina technology mobil */
+@media (min-width: 1024px) {
+  .init-home-mobil {
+    display: none;
+  }
+  .init-home-desktop {
+    display: block;
+  }
+  body {
+    background-image: url(images/background-home-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+  }
+  .links__container {
+    background-color: var(--shadow);
+    display: flex;
+    place-content: flex-end;
+    width: 100%;
+    height: 60px;
+  }
+  .link {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: var(--text-white);
+    font-family: var(--font);
+    font-size: 1.2rem;
+  }
+  .link:hover {
+    border-bottom: 1px solid var(--text-white);
+  }
+  .home-container-desktop {
+    position: relative;
+    padding-left: 50px;
+  }
+  .sub__title-desktop {
+    margin-top: 30px;
+    letter-spacing: 5px;
+    color: var(--text-white);
+    font-family: var(--font);
+    font-size: 1.8rem;
+  }
+  .title__home-desktop {
+    margin-top: 40px;
+    letter-spacing: 5px;
+    color: var(--text-white);
+    font-family: var(--font);
+    font-size: 4.8rem;
+  }
+  .p-container-desktop {
+    width: 500px;
+  }
+  .p__home-desktop {
+    margin-top: 40px;
+    color: var(--text-white);
+    font-size: 1.4rem;
+    margin-bottom: 80px;
+  }
+  .container-button-desktop {
+    width: 120px;
+    height: 120px;
+    background-color: var(--text-white);
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+  }
+  .container-button-desktop:hover {
+    background-color: var(--active-button);
+  }
+  .button-desktop {
+    position: relative;
+    top: 45px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--button-grey);
+  }
+
+/* aca empieza destination */
+  .destination {
+    background-image: url(images/background-destination-desktop.jpg);
+  }
+  .init-destination-mobil {
+    display: none;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .moon-dates {
+    padding: 5px 40px;
+  }
+  .destination-details {
+    font-size: 1.6rem;
+    letter-spacing: 5px;
+  }
+  .image-container img {
+    width: 330px;
+    height: 330px;
+    margin-top: 80px;
+  }
+  .moons__list-container {
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+  .title-moon {
+    font-size: 5.4rem;
+    letter-spacing: 5px;
+  }
+  .dates-moon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+/* aca termina destination */
+
+/* aca empieza crew */
+  .crew-details-desktop {
+    display: block;
+  }
+  .crew-details {
+    display: none;
+  }
+  .init-crew-mobil {
+    display: none;
+  }
+  .crew {
+    background-image: url(images/background-crew-desktop.jpg);
+    background-size: cover;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .crew-image {
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    top: 335px;
+  }
+  .crew__list-container-desktop {
+    display: flex;
+    padding: 50px 0;
+  }
+  .titles-crew-desktop {
+    text-align: center;
+    padding: 80px 30px;
+  }
+  .crew-title-desktop {
+    color: var(--text-white);
+    font-family: var(--font);
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+  .subtitle-crew-desktop {
+    color: var(--text-white);
+    padding: 10px 0;
+    font-size: 1.6rem;
+  }
+  .title-crew-desktop {
+    color: var(--text-white);
+    font-family: var(--font);
+    font-size: 2.8rem;
+    padding: 20px 0;
+    letter-spacing: 5px;
+  }
+  .article-crew-desktop {
+    color: var(--text-white);
+    padding: 10px 0;
+    font-size: 1.4rem;
+  }
+/* aca termina crew */
+
+/* aca empieza technology  */
+
+  .technology {
+    background-image: url(images/background-technology-desktop.jpg);
+    background-size: cover;
+  }
+  .init-technology-mobil {
+    display: none;
+  }
+  .technology-details-desktop {
+    display: block;
+  }
+  .technology__list-container-desktop {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 90px;
+    width: auto;
+    background-color: var(--shadow);
+  }
+  .link-technology {
+    text-decoration: none;
+    color: var(--text-white);
+    font-size: 1.6rem;
+    background-color: var(--button-grey);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+  }
+  .titles-technology-desktop {
+  color: var(--text-white);
+  text-align: center;
+  margin-top: 55px;
+  }
+  .technology-title-desktop {
+    font-family: var(--font);
+    letter-spacing: 5px;
+    font-size: 1.6rem;
+    margin: 25px 0 25px 0;
+  }
+  .article-technology-desktop {
+    margin: 25px 0 25px 0;
+    font-size: 1.4rem;
+  }
+  .technology-image {
+    width: 100%;
+    height: 750px;
+  }
+/* aca termina technology */
+}
